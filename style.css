@@ -1,0 +1,10 @@
+body {
+    font-family: verdana, sans-serif;
+    background: #555555;
+    font: inherit;
+    color: white;
+}
+    
+a {
+   color: lightblue;
+}
