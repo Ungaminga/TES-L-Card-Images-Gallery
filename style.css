@@ -21,3 +21,8 @@ span {
 img {
      max-width: 30%;
 }
+
+#page{
+      max-height: 800px;
+      text-align: center;
+}
