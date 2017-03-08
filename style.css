@@ -4,7 +4,20 @@ body {
     font: inherit;
     color: white;
 }
-    
+
 a {
    color: lightblue;
+}
+
+h1 > a {
+   position: absolute;
+   left: 10px;
+}
+
+span {
+      position: absolute;
+      left: 10px;
+}
+img {
+     max-width: 30%;
 }
