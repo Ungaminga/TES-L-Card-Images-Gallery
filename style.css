@@ -43,3 +43,64 @@ div.links{
 div.links > a{
       color: blue;
 }
+div.previous,
+div.picture,
+div.next{
+    display: inline;
+    position: relative;
+}
+
+div.arrow{
+    position:absolute; 
+    display:inline;
+    bottom:-90px; 
+    font-size:100px
+}
+
+div.arrow1{
+    left:0px;
+}
+
+div.arrow2{
+    right:0px;
+}
+
+div:not(.picture) > a img:hover{
+    position: relative;
+    top: -5px;
+    right: -2px;
+}
+
+@keyframes lefttoleft{
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: -10px;
+  }
+}
+div.arrow1:hover,
+div.previous:hover div.arrow1{
+    animation-duration: 0.5s;
+    animation-name: lefttoleft;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes righttoright{
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: -10px;
+  }
+}
+div.arrow2:hover,
+div.next:hover div.arrow2{
+    animation-duration: 0.5s;
+    animation-name: righttoright;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
